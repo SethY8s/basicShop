@@ -1,10 +1,18 @@
 import React, { useRef } from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
+import { useAuth } from '../context/AuthContext';
 
 export default function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
+  const { signup } = useAuth()
+
+  function handleSubmit(e) {
+      e.prevent.Default()
+
+      signup(emailRef.current.value, passwordRef.current.value)
+  }
 
   return (
     <>
@@ -33,7 +41,7 @@ export default function Signup() {
               required
             ></Form.Control>
           </Form.Group>
-          <Button className="w-100" type="submit">
+          <Button className="w-100 mt-3" type="submit">
             Sign Up
           </Button>
         </Card.Body>
