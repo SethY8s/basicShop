@@ -11,7 +11,8 @@ function App() {
       classname="d-flex justify-content-center align-items-center"
       style={{ minHeight: '100vh' }}
     >
-      <div className="m-auto mt-5" style={{ maxWidth: '400px' }}>
+      <div className="" >
+      {/* style={{ maxWidth: '400px' }} */}
         <Router>
           <AuthProvider>
             <Routes>
