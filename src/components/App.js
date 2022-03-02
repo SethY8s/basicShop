@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './Dashboard'
 import Login from './Login'
 import Profile from './Profile'
-import '../styles/styles.css'
+import ForgotPassword from './ForgotPassword';
+
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Dashboard />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="login" element ={<Login />} />
-              <Route path="profile" element ={<Profile />} />
+              <Route path="/login" element ={<Login />} />
+              <Route path="/profile" element ={<Profile />} />
+              <Route path="/forgot-password" element ={<ForgotPassword />} />
             </Routes>
           </AuthProvider>
         </Router>
