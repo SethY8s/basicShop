@@ -32,7 +32,7 @@ export function Navbarcomp() {
   };
 
   return (
-    <div className="w-100">
+    <div className="w-100 pen">
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>

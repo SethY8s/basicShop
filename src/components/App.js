@@ -1,5 +1,5 @@
 import Signup from './Signup';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import { AuthProvider } from '../context/AuthContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './Dashboard'
@@ -9,9 +9,12 @@ import '../styles/styles.css'
 
 function App() {
   return (
-    <Container
+    //div once was a container
+    <div
+    
       classname="d-flex justify-content-center align-items-center"
-      style={{ minHeight: '100vh' }}
+      style={{ minHeight: '100vh',
+    width: '100%' }}
     >
       
       
@@ -27,7 +30,7 @@ function App() {
         </Router>
         
       
-    </Container>
+     </div>
   );
 }
 
