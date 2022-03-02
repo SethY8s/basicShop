@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './Dashboard'
 import Login from './Login'
 import Profile from './Profile'
+import '../styles/styles.css'
 
 function App() {
   return (
