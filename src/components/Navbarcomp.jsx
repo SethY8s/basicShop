@@ -1,9 +1,30 @@
 import React from 'react'
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap'
+import { useAuth } from '../context/AuthContext'
+import { Link } from 'react-router-dom'
 
 export function Navbarcomp() {
+
+  const { currentUser } = useAuth()
+
+  
+
+  const checker = () => {
+    if(currentUser === null ){
+      return <Button>Not signed int</Button>
+    } else {
+      return <Link to='/profile'><Button><strong>Profile:</strong> {currentUser.email}</Button></Link>
+    }
+    // console.log(currentUser)
+  }
+  
+   
+  
+
   return (
+    <div className="w-100 ">
     <Navbar bg="light" expand="lg">
+    
   <Container>
     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,9 +39,16 @@ export function Navbarcomp() {
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
+
+        {checker()}
+
+        {/* <Button>signup</Button>
+        <Button>login</Button> */}
       </Nav>
     </Navbar.Collapse>
   </Container>
+  
 </Navbar>
+</div>
   )
 }
