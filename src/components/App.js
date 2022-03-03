@@ -8,6 +8,7 @@ import Profile from './Profile'
 import ForgotPassword from './ForgotPassword';
 
 
+
 function App() {
   return (
     //div once was a container
@@ -22,6 +23,7 @@ function App() {
         <Router>
           <AuthProvider>
             <Routes>
+              
               <Route exact path="/" element={<Dashboard />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element ={<Login />} />
