@@ -6,6 +6,8 @@ import Dashboard from './Dashboard'
 import Login from './Login'
 import Profile from './Profile'
 import ForgotPassword from './ForgotPassword';
+import { Navbarcomp } from './Navbarcomp';
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
       
         <Router>
           <AuthProvider>
+            <Navbarcomp />
             <Routes>
               
               <Route exact path="/" element={<Dashboard />} />

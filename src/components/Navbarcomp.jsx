@@ -9,15 +9,14 @@ export function Navbarcomp() {
   const checker = () => {
     if (currentUser === null) {
       return (
-        <div className='mx-auto'>
-          <Link to='/login'>
+        <div className="mx-auto">
+          <Link to="/login">
             <Button>Login</Button>
           </Link>
-          <Link to='/signup'>
-          <Button>Sign Up</Button>
-        </Link>
+          <Link to="/signup">
+            <Button>Sign Up</Button>
+          </Link>
         </div>
-          
       );
     } else {
       return (
@@ -35,7 +34,9 @@ export function Navbarcomp() {
     <div className="w-100 pen">
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <Link to="/" style={{ textDecoration: 'none', color: 'black' }}> Shop Shop </Link>{' '}
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -56,8 +57,6 @@ export function Navbarcomp() {
               </NavDropdown>
 
               {checker()}
-
-          
             </Nav>
           </Navbar.Collapse>
         </Container>
