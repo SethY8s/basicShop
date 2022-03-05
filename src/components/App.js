@@ -7,6 +7,8 @@ import Login from './Login'
 import Profile from './Profile'
 import ForgotPassword from './ForgotPassword';
 import { Navbarcomp } from './Navbarcomp';
+import SingleItem from './singleItem/SingleItem'
+import Cart from './cart/Cart'
 
 
 
@@ -32,6 +34,8 @@ function App() {
               <Route path="/login" element ={<Login />} />
               <Route path="/profile" element ={<Profile />} />
               <Route path="/forgot-password" element ={<ForgotPassword />} />
+              <Route path="/cart" element ={<Cart />} />
+              <Route path="/product/:id" element ={<SingleItem />} />
             </Routes>
           </AuthProvider>
         </Router>
