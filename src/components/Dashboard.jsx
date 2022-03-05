@@ -1,10 +1,12 @@
 import React from 'react'
+import Products from './product/Products'
 
 
 export default function Dashboard() {
   return (
     <div>
-    Dashboard
+      dashboard
+    <Products />
     </div>
   )
 }
