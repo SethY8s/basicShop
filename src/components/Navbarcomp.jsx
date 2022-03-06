@@ -31,15 +31,15 @@ export function Navbarcomp() {
   };
 
   return (
-    <div className="w-100 pen">
+    <div>
       <Navbar bg="light" expand="lg">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home">
             <Link to="/" style={{ textDecoration: 'none', color: 'black' }}> Shop Shop </Link>{' '}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -57,6 +57,11 @@ export function Navbarcomp() {
               </NavDropdown>
 
               {checker()}
+              <Nav.Item>
+        
+          <Link to='/cart'><Button>Cart</Button></Link>
+        
+      </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>

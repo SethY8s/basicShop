@@ -14,11 +14,12 @@ export default function Product() {
        
         
         <h2 className={productCSS.productText}>Ape</h2>
+        <p className='mt-3'>$15</p>
         
         
         
-        <span className={productCSS.btnContainer}>
-        <button className='btn btn-sm btn-primary m-2'>Add to Cart</button>
+        <span>
+        <Link to='/product/:id'><button className='btn btn-sm btn-primary m-2'>Add to Cart</button></Link>
         <button className='btn btn-sm btn-primary m-2'>View Item</button>
         </span>
         </div>
