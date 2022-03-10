@@ -1,0 +1,12 @@
+
+
+.checkoutContainer{
+    height: 20rem;
+    width: 25%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}

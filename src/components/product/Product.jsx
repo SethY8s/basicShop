@@ -19,8 +19,8 @@ export default function Product() {
         
         
         <span>
-        <Link to='/product/:id'><button className='btn btn-sm btn-primary m-2'>Add to Cart</button></Link>
-        <button className='btn btn-sm btn-primary m-2'>View Item</button>
+        <Link to='/product/:id'><button className='btn btn-sm btn-primary m-2'>View item</button></Link>
+        <button className='btn btn-sm btn-primary m-2'>Add to Cart</button>
         </span>
         </div>
         
