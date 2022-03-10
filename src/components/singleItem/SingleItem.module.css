@@ -1,0 +1,14 @@
+.box{
+    width: 55%;
+    height: 25rem;
+    background-color: grey;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.addToCart{
+    width: 80%;
+    margin-top: 1.2rem;
+}

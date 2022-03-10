@@ -2,11 +2,28 @@
 
 .checkoutContainer{
     height: 20rem;
-    width: 25%;
-    background-color: green;
+    width: 22%;
+    background-color: grey;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
+.box{
+    display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    height: 20rem;
+    background-color: grey;
+      width: 65%;
+      border-radius: 10px;
+}
+
+.cartimg{
+    height: 20rem;
+    border-radius: 10px;
+    background-color: grey;
     
 }
+

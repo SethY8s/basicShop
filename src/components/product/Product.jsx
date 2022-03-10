@@ -9,7 +9,7 @@ export default function Product() {
     
         <div className={productCSS.productContainer}>
 
-        <img src="https://wallpaperaccess.com/full/7871566.png" alt="ape" />
+        <img className={productCSS.productImg} src="https://wallpaperaccess.com/full/7871566.png" alt="ape" />
 
        
         
