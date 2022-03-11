@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom'
 import productCSS from './Product.module.css'
 
 
-export default function Product() {
+export default function Product( {productData} ) {
   return (
       
     
         <div className={productCSS.productContainer}>
 
-        <img className={productCSS.productImg} src="https://wallpaperaccess.com/full/7871566.png" alt="ape" />
+        <img className={productCSS.productImg} src={productData.image} alt={productData.title} />
 
        
         
-        <h2 className={productCSS.productText}>Ape</h2>
-        <p className='mt-3'>$15</p>
+        <h2 className={productCSS.productText}>{productData.title}</h2>
+        <p className='mt-3'>${productData.price}</p>
         
         
         
