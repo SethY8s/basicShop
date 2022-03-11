@@ -3,7 +3,7 @@ import * as actionTypes from './shopping-types';
 export const addToCart = (itemID) => {
   return {
     type: actionTypes.ADD_TO_CART,
-    paylaod: {
+    payload: {
       id: itemID,
     },
   };
@@ -12,7 +12,7 @@ export const addToCart = (itemID) => {
 export const removeFromCart = (itemID) => {
   return {
     type: actionTypes.REMOVE_FROM_CART,
-    paylaod: {
+    payload: {
       id: itemID,
     },
   };
@@ -21,7 +21,7 @@ export const removeFromCart = (itemID) => {
 export const adjustQty = (itemID, value) => {
   return {
     type: actionTypes.ADJUST_QTY,
-    paylaod: {
+    payload: {
       id: itemID,
       qty: value,
     },
