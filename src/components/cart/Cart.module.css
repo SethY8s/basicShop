@@ -1,4 +1,13 @@
 
+.cartcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    height: fit-content;
+    margin-top: 5rem;
+}
+
 
 .checkoutContainer{
     height: 20rem;
