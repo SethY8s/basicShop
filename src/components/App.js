@@ -5,7 +5,7 @@ import Dashboard from './Dashboard'
 import Login from './Login'
 import Profile from './Profile'
 import ForgotPassword from './ForgotPassword';
-import { Navbarcomp } from './Navbarcomp';
+import  Navbarcomp from './Navbarcomp';
 import SingleItem from './singleItem/SingleItem'
 import Cart from './cart/Cart'
 
