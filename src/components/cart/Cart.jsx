@@ -10,13 +10,12 @@ function Cart({ cart }) {
     <>
     <div className={cartCSS.cartcontainer}>
       {/* itmes box */}
-      <div>
-      <div className='d-inline-flex flex-column w-100'>
+      <section  className='d-inline-flex'>
+      <div className={cartCSS.columnStyle}>
         <CartItem />
         <CartItem />
-
         </div>
-        </div>
+        </section>
         
       {/* end of items box */}
       {/* Checkout box */}
