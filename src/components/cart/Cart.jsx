@@ -13,7 +13,7 @@ function Cart({ cart }) {
       <section  className='d-inline-flex'>
       <div className={cartCSS.columnStyle}>
       {cart.map((item) => (
-          <CartItem />
+          <CartItem key={item.id} itemData={item}/>
         ))}
         </div>
         </section>
