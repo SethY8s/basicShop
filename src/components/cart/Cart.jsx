@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import cartCSS from './Cart.module.css';
 import { Button } from 'react-bootstrap';
 import CartItem from './CartItem';
 
 import { connect } from 'react-redux'
 
+
 function Cart({ cart }) {
+
+const[totalItems, setTotalItems] = useState(0)
+const[totalPrice, setTotalPrice] = useState(0)
+
+useEffect(() => {
+  let price = 0;
+  let items = 0;
+
+  cart.forEach((item) => {
+    items += item.qty
+    price += item.qty * item.price
+  })
+    
+  setTotalItems(items)
+  setTotalPrice(price)
+
+}, [cart, totalItems, setTotalItems, totalPrice, setTotalPrice])
+
   return (
     <>
     <div className={cartCSS.cartcontainer}>
@@ -27,9 +46,9 @@ function Cart({ cart }) {
           </h4>
 
           <span>
-            Total: (1 item){' '}
+            Total: ({totalItems})items{' '}
             <span className="m-3">
-              <b>$15</b>
+              <b>${totalPrice}</b>
             </span>
           </span>
           <Button>Proceed to Checkout</Button>
