@@ -12,8 +12,9 @@ function Cart({ cart }) {
       {/* itmes box */}
       <section  className='d-inline-flex'>
       <div className={cartCSS.columnStyle}>
-        <CartItem />
-        <CartItem />
+      {cart.map((item) => (
+          <CartItem />
+        ))}
         </div>
         </section>
         
@@ -39,10 +40,10 @@ function Cart({ cart }) {
   );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    cart: state.shop.cart
-  }
-}
+    cart: state.shop.cart,
+  };
+};
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps)(Cart);

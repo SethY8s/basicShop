@@ -22,7 +22,7 @@ function Product({ productData, addToCart }) {
           <button className="btn btn-sm btn-primary m-2">View item</button>
         </Link>
         <button
-           onClick={() => addToCart(productData.ID)}
+           onClick={() => addToCart(productData.id)}
           className="btn btn-sm btn-primary m-2"
         >
           Add to Cart
