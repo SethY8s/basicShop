@@ -27,7 +27,7 @@ export default function Login() {
 
   return (
     <>
-    <div className="m-auto mt-5" style={{ maxWidth: '400px' }}>
+    <div className="mt-5 m-auto" style={{ maxWidth: '400px' }}>
       <Card >
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>

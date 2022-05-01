@@ -1,18 +1,13 @@
 import Signup from './Signup';
 import { AuthProvider } from '../context/AuthContext';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Login from './Login';
 import Profile from './Profile';
 import ForgotPassword from './ForgotPassword';
 import Navbarcomp from './Navbarcomp';
-import SingleItem from './singleItem/SingleItem';
-import Cart from './cart/Cart';
+
+
 import { connect } from 'react-redux';
 
 function App({ currentItem }) {
@@ -31,9 +26,8 @@ function App({ currentItem }) {
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/cart" element={<Cart />} />
-
-            <Route path="/product/:id" element={<SingleItem />} />
+           
+           
           </Routes>
         </AuthProvider>
       </Router>
