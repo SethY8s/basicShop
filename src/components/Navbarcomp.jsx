@@ -1,21 +1,15 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { Link, useLocation } from 'react-router-dom';
 import { connect } from 'react-redux'
 
 function Navbarcomp({ cart }) {
-  const[cartCount, setCartCount] = useState(0)
+  
   const location = useLocation()
 
 
-  useEffect(()=> {
-    let count = 0;
-    cart.forEach(item=>{
-      count += item.qty
-    })
-    setCartCount(count);
-  }, [cart, cartCount])
+
   
   const { currentUser } = useAuth();
 
@@ -44,7 +38,7 @@ function Navbarcomp({ cart }) {
   };
 
   
-  if(location.pathname === '/login') {
+  if(location.pathname === '/login' || '') {
     return null
   }
   

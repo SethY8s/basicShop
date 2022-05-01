@@ -6,9 +6,10 @@ import Login from './Login';
 import Profile from './Profile';
 import ForgotPassword from './ForgotPassword';
 import Navbarcomp from './Navbarcomp';
-
+import SecretComp from './SecretComp';
 
 import { connect } from 'react-redux';
+
 
 function App({ currentItem }) {
   return (
@@ -26,6 +27,7 @@ function App({ currentItem }) {
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/secret" element={<SecretComp />} />
            
            
           </Routes>
