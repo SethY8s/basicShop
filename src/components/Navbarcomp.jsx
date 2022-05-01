@@ -2,9 +2,9 @@ import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { useAuth } from '../context/AuthContext';
 import { Link, useLocation } from 'react-router-dom';
-import { connect } from 'react-redux'
 
-function Navbarcomp({ cart }) {
+
+export default function Navbarcomp({ cart }) {
   
   const location = useLocation()
 
@@ -78,10 +78,5 @@ function Navbarcomp({ cart }) {
   );
 }
 
-const mapStateToProps = state => {
-  return{
-    cart: state.shop.cart
-  }
-}
 
-export default connect(mapStateToProps)(Navbarcomp)
+

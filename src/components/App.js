@@ -8,10 +8,10 @@ import ForgotPassword from './ForgotPassword';
 import Navbarcomp from './Navbarcomp';
 import SecretComp from './SecretComp';
 
-import { connect } from 'react-redux';
 
 
-function App({ currentItem }) {
+
+export default function App() {
   return (
     //div once was a container
     <div
@@ -37,10 +37,4 @@ function App({ currentItem }) {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    currentItem: state.shop.currentItem,
-  };
-};
 
-export default connect(mapStateToProps)(App);
